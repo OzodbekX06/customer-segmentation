@@ -1,0 +1,88 @@
+{
+  "dataset_size": 300,
+  "eda_summary": {
+    "total_records": 300,
+    "columns": [
+      "CustomerID",
+      "Age",
+      "AnnualIncome_k",
+      "SpendingScore_1_100"
+    ],
+    "missing_values": {
+      "CustomerID": 0,
+      "Age": 0,
+      "AnnualIncome_k": 0,
+      "SpendingScore_1_100": 0
+    },
+    "summary_statistics": {
+      "Age": {
+        "count": 300.0,
+        "mean": 39.04,
+        "std": 10.55,
+        "min": 20.46,
+        "25%": 29.52,
+        "50%": 39.74,
+        "75%": 47.55,
+        "max": 60.95
+      },
+      "AnnualIncome_k": {
+        "count": 300.0,
+        "mean": 59.48,
+        "std": 27.85,
+        "min": 20.06,
+        "25%": 32.25,
+        "50%": 54.62,
+        "75%": 86.32,
+        "max": 111.55
+      },
+      "SpendingScore_1_100": {
+        "count": 300.0,
+        "mean": 54.19,
+        "std": 29.2,
+        "min": 9.8,
+        "25%": 24.26,
+        "50%": 57.67,
+        "75%": 82.19,
+        "max": 103.12
+      }
+    }
+  },
+  "kmeans_evaluation": {
+    "num_clusters": 4,
+    "noise_points": 0,
+    "silhouette_score": 0.6888,
+    "davies_bouldin_score": 0.46
+  },
+  "dbscan_evaluation": {
+    "num_clusters": 3,
+    "noise_points": 0,
+    "silhouette_score": 0.6207,
+    "davies_bouldin_score": 0.541
+  },
+  "segment_interpretation": {
+    "Cluster_0": {
+      "size": 75,
+      "mean_age": 50.4,
+      "mean_income_k": 84.0,
+      "mean_spending_score": 20.7
+    },
+    "Cluster_1": {
+      "size": 75,
+      "mean_age": 35.4,
+      "mean_income_k": 88.7,
+      "mean_spending_score": 84.5
+    },
+    "Cluster_2": {
+      "size": 75,
+      "mean_age": 25.2,
+      "mean_income_k": 29.4,
+      "mean_spending_score": 80.3
+    },
+    "Cluster_3": {
+      "size": 75,
+      "mean_age": 45.2,
+      "mean_income_k": 35.8,
+      "mean_spending_score": 31.3
+    }
+  }
+}
